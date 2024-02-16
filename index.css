@@ -103,8 +103,8 @@ a:hover {
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
-  font-size: 18px;
-  margin-right: 40px;
+  font-size: 17px;
+  margin-right: 25px;
 }
 
 .tab button:last-child {
