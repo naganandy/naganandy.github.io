@@ -132,11 +132,12 @@ a:hover {
 
 
 .affiliation {
+    display: inline-block;
     background-color: #ffffff; /* White background for contrast */
     border-left: 5px solid #d3ffd3; /* Line on the left for visual */
     padding: 1em;
     margin-top: 1em;
-    box-shadow: 0 2px 4px rgba(0,1,0,0); /* subtle shadow for depth */
+    box-shadow: 0 2px 4px rgba(0,0,0,0); /* subtle shadow for depth */
 }
 
 
