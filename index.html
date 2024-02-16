@@ -12,6 +12,7 @@ body {
 </style>
 </head>
 <body>
+<script src="index.js"></script>
 
 <h1><a href = "https://naganandy.github.io/cv.pdf">Naganand Yadati</a></h1>
 
@@ -19,57 +20,111 @@ Postdoctoral Research Fellow supervised by <a href = "https://www.comp.nus.edu.s
 <a href = "https://www.comp.nus.edu.sg/">School of Computing</a> in
 <a href = "https://www.nus.edu.sg/">National University of Singapore</a>.
 <br></br>
-<h2>Education</h2>
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Education')">Education</button>
+  <button class="tablinks" onclick="openTab(event, 'ResearchFocus')">Research Focus</button>
+  <button class="tablinks" onclick="openTab(event, 'KeyPublications')">Key Publications</button>
+</div>
+
+
+<div id="Education" class="tabcontent">
 <ul>
    <li> 2016 - 2021: Ph.D. 
    from the <a href = "https://iisc.ac.in/">Indian Institute of Science</a> with thesis titled <a href = "https://etd.iisc.ac.in/handle/2005/5560">Deep Learning over Hypergraphs</a> advised by 
 <a href = "https://talukdar.net/">Prof. Partha Talukdar</a>.
 </ul>
+</div>
 
+
+
+<div id="ResearchFocus" class="tabcontent">
 <br></br>
-<h2>Research Focus</h2>
 <ul>
 <li>Deep Learning with emphasis on Graph Neural Networks</li>
 <li>Learning on Rich Structures (e.g., Hypergraphs, Causal Graphs)</li>
 </ul>
-
-<br></br>
-<h2>Key Publications</h2>
-<!-- Project 1 -->
-<div class="NeurIPS 2019">
-  <h3>Graph Convolution on Hypergraphs</h3>
-  <img src="1.png" alt="Graph Convolution on Hypergraphs">
-  <p>This project aimed to extend traditional graph neural networks to hypergraph structures, which encompass higher-order relationships between nodes. Outcomes of this research include the development of a novel deep learning algorithm capable of handling complex hypergraph data, with applications in social network analysis and bioinformatics. The project led to a publication in a top-tier conference and was awarded the Best Paper at XYZ Conference.</p>
 </div>
 
 
-<ul>
-   <li> <p><a href = "https://link.springer.com/chapter/10.1007%2F978-3-030-75762-5_36">Graph Neural Networks for Soft Semi-Supervised Learning on Hypergraphs</a> [<a href = "https://drive.google.com/file/d/1DNJXIqKdpWqrimLQU3yZxUtYUYBXh1Oe/view">code</a>]
-   <br>Naganand Yadati, Tingran Gao, Shahab Asoodeh, Partha Talukdar, and Anand Louis
-   <br> <i>PAKDD 2021</i> 
-   </p></li>
-   <li> <p><a href = "https://aclanthology.org/2021.eacl-main.35/">Knowledge Base Question Answering through Recursive Hypergraphs</a> [<a href = "https://papertalk.org/papertalks/28367">slides</a>]
-   <br>Naganand Yadati, Dayanidhi R S, Vaishnavi S, Indira K M, and Srinidhi G
-   <br> <i>EACL 2021</i> 
-   </p></li>
-   <li> <p><a href = "https://nips.cc/Conferences/2020/ScheduleMultitrack?event=16908">Neural Message Passing for Multi-Relational Ordered and Recursive Hypergraphs</a> [<a href = "https://github.com/naganandy/G-MPNN-R">code</a>, <a href = "https://nips.cc/virtual/2020/public/poster_217eedd1ba8c592db97d0dbe54c7adfc.html">slides</a>]
-   <br>Naganand Yadati
-   <br> <i>NeurIPS 2020</i> 
-   </p></li>
-   <li> <p><a href = "https://dl.acm.org/doi/abs/10.1145/3340531.3411870">NHP: Neural Hypergraph Link Prediction</a> [<a href = "https://drive.google.com/file/d/1z7XwXo5ohTudUTjyS4KfQbqwze24Ry-o/view">code</a>, <a href = "https://dl.acm.org/doi/abs/10.1145/3340531.3411870#sec-supp">slides</a>]
-   <br>Naganand Yadati, Vikram Nitin, Madhav Nimishakavi, Prateek Yadav, Anand Louis, and Partha Talukdar
-   <br> <i>CIKM 2020</i> 
-   </p></li>
-   </p></li>
-   <li> <p><a href = "https://dl.acm.org/doi/10.5555/3454287.3454422">HyperGCN: A New Method for Training Graph Convolutional Networks on Hypergraphs</a> [<a href = "https://github.com/malllabiisc/HyperGCN">code</a>, <a href = "https://github.com/malllabiisc/HyperGCN/blob/master/slides/HyperGCN.pdf">slides</a>]
-   <br>Naganand Yadati, Madhav Nimishakavi, Prateek Yadav, Vikram Nitin, Anand Louis, and Partha Talukdar
-   <br> <i>NeurIPS 2019</i> 
-   </p></li>
-   <li> <p><a href = "https://www.aclweb.org/anthology/D19-2006/">Tutorial on Graph-based Deep Learning in Natural Language Processing</a> [<a href = "https://vimeo.com/439776761">video</a>, <a href = "https://shikhar-vashishth.github.io/assets/pdf/emnlp19_tutorial.pdf">slides</a>]
-   <br>Shikhar Vashishth, Naganand Yadati, and Partha Talukdar
-   <br> <i>EMNLP-IJCNLP 2019, CoDS-COMAD 2020</i> 
-   </p></li>
-</ul>
+
+<br></br>
+<div id="KeyPublications" class="tabcontent">
+<div class="project">
+    <div class="project-image">
+        <img src="1.png" alt="hypergcn_neurips19">
+    </div>
+    <div class="project-info">
+        <h3>HyperGCN: A New Method for Training Graph Convolutional Networks on Hypergraphs</h3>
+        <p>
+             In <a href="https://papers.nips.cc/paper_files/paper/2019/hash/1efa39bcaec6f3900149160693694536-Abstract.html" target="_blank">NeurIPS'19</a>| <a href="https://github.com/malllabiisc/HyperGCN" target="_blank">code</a>| <a href="https://github.com/malllabiisc/HyperGCN/blob/master/slides/HyperGCN.pdf" target="_blank">slides</a>
+        </p>
+        <p>Innovative and effective extenion of graph neural networks to hypergraphs, proven by extensive real-world testing.
+        </p>
+    </div>
+</div>
+
+
+<div class="project">
+    <div class="project-image">
+        <img src="3.png" alt="gmpnnr_neurips20">
+    </div>
+    <div class="project-info">
+        <h3>Neural Message Passing for Multi-Relational Ordered and Recursive Hypergraphs</h3>
+        <p>
+             In <a href="https://proceedings.neurips.cc//paper_files/paper/2020/hash/217eedd1ba8c592db97d0dbe54c7adfc-Abstract.html" target="_blank">NeurIPS'20</a>| <a href="https://github.com/naganandy/G-MPNN-R" target="_blank">code</a>
+        </p>
+        <p>Frameworks that extend Message Passing Neural Networks to effectively handle multi-relational and recursive structures in real-world learning.
+        </p>
+    </div>
+</div>
+
+
+<div class="project">
+    <div class="project-image">
+        <img src="6.png" alt="cvxgnn_icdm22">
+    </div>
+    <div class="project-info">
+        <h3>A Convex Formulation for Graph Convolutional Training: Two Layer Case</h3>
+        <p>
+             In <a href="https://ieeexplore.ieee.org/abstract/document/10027696" target="_blank">ICDM'22</a>| <a href="https://drive.google.com/file/d/1sdsxeca6-LITiyISdpkBUVNqO0aJ9_TC/view?usp=drive_link" target="_blank">code</a>
+        </p>
+        <p>A convex approach to train two-layer ReLU-based Graph Neural Networks, ensuring global optimality in a field where theoretical understandings of optimisation have been limited.
+        </p>
+    </div>
+</div>
+
+
+<div class="project">
+    <div class="project-image">
+        <img src="8.png" alt="gainer_eacl24">
+    </div>
+    <div class="project-info">
+        <h3>GAINER: Graph Machine Learning with Node-specific Radius for Classification of Short Texts and Documents</h3>
+        <p>
+             In <a href="https://2024.eacl.org/program/main-accepted/#long-papers" target="_blank">EACL'24</a>
+        </p>
+        <p>Node-specific message passing radii in Graph Machine Learning for NLP, enhancing model flexibility validated by testing on several NLP tasks.
+        </p>
+    </div>
+</div>
+
+
+<div class="project">
+    <div class="project-image">
+        <img src="t.png" alt="gnn_emnlp19">
+    </div>
+    <div class="project-info">
+        <h3>Tutorial on Graph-based Deep Learning in Natural Language Processing</h3>
+        <p>
+             In <a href="https://www.aclweb.org/anthology/D19-2006/" target="_blank">EMNLP'19</a>| <a href = "https://vimeo.com/439776761">video</a>| <a href = "https://shikhar-vashishth.github.io/assets/pdf/emnlp19_tutorial.pdf">slides</a>
+        </p>
+        <p>A summary of various Graph Neural Network models in NLP covering a broad range of NLP tasks.
+        </p>
+    </div>
+</div>
+</div>
 
 
 </body>
